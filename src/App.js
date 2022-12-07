@@ -29,7 +29,7 @@ const App = () => {
   const deleteTask = (id) => {
     setTasks(tasks.filter((task) => task.id !== id ))
   }
-
+//todo:toggle reminder still not working
   //Toggle Reminder
   const toggleReminder = (id) => {
     setTasks(

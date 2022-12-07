@@ -1,5 +1,6 @@
 import { FaTimes } from 'react-icons/fa'
 
+//again relook on tasks toggle
 const Task = ({ task, onDelete, onToggle }) => {
   return (
     <div className='task' onDoubleClick={() =>
