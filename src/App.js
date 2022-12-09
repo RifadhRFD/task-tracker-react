@@ -5,6 +5,7 @@ import Tasks from './components/Tasks';
 
 const App = () => {
   const [tasks, setTasks] = useState([
+    //add datas
     {
       id: 1,
       text: 'Staff\'s Appointment',
