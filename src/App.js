@@ -22,7 +22,7 @@ const App = () => {
       id: 3,
       text: 'Student\'s Appointment',
       day: 'Feb 7th at 4.30pm',
-      reminder: true,
+      reminder: false,
     }
   
 ])
@@ -33,8 +33,7 @@ const App = () => {
 //todo:toggle reminder still not working
   //Toggle Reminder
   const toggleReminder = (id) => {
-    setTasks(
-      tasks.map((task) => 
+    setTasks(tasks.map((task) => 
       task.id === id ? {...task, reminder:
       !task.reminder } : task 
       ))
