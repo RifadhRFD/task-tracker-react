@@ -7,7 +7,7 @@ import AddTask from './components/AddTask';
 const App = () => {
   const [showAddTask, setShowAdd] = useState(false)
   const [tasks, setTasks] = useState([
-    //add datas
+    //add data's
     {
       id: 1,
       text: 'Staff\'s Appointment',
@@ -49,7 +49,7 @@ const App = () => {
       !task.reminder } : task 
       ))
   }
-
+  //output
   return (
     <div className='container'>
       <Header/>
