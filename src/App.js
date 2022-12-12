@@ -36,7 +36,7 @@ const App = () => {
     const newTask = { id, ...task }
     setTasks([...tasks, newTask])
   }
-// need to delete need to delete
+// need to delete need to delete delete this
   //Delete Task
   const deleteTask = (id) => {
     setTasks(tasks.filter((task) => task.id !== id ))
