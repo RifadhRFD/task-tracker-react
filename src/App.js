@@ -9,22 +9,23 @@ const App = () => {
   const [tasks, setTasks] = useState([
     //add data's
     {
-      id: 1,
-      text: 'Staff\'s Appointment',
-      day: 'Feb 5th at 2.45pm',
-      reminder: true,
+
+      "id": 1,
+      "text": "Staff's Appointment",
+      "day": "Feb 5th at 2.45pm",
+      "reminder": true
     },
     {
-      id: 2,
-      text: 'Teacher\'s Appointment',
-      day: 'Feb 6th at 3.35pm',
-      reminder: true,
+      "id": 2,
+      "text": "Teacher's Appointment",
+      "day": "Feb 6th at 3.35pm",
+      "reminder": true,
     },
     {
-      id: 3,
-      text: 'Student\'s Appointment',
-      day: 'Feb 7th at 4.55pm',
-      reminder: false,
+      "id": 3,
+      "text": "Student\'s Appointment",
+      "day": "Feb 7th at 4.55pm",
+      "reminder": false,
     }
   
 ])
