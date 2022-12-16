@@ -13,13 +13,14 @@ const App = () => {
       const tasksFromServer = await fetchTasks()
       setTasks(tasksFromServer)
     }
+
     getTasks()
   }, [])
 
 
   //Fetch Tasks
-  const fetchTasks = async() => {
-    const res = await fetch(`http://localhost:3000/tasks`)
+  const fetchTasks = async(id) => {
+    const res = await fetch(`http://localhost:3000/tasks/${id}`)
     const data = await res.json()
 
     return data
@@ -48,12 +49,14 @@ const App = () => {
 
   //Delete Task
   const deleteTask = async (id) => {
-    await fetch(`http://localhost:3000/tasks/${id}`,
+    const res = await fetch(`http://localhost:3000/tasks/${id}`,
     {
       method: 'DELETE'
     })
 
-    setTasks(tasks.filter((task) => task.id !== id ))
+    res.status === 200
+      ? setTasks(tasks.filter((task) => task.id !== id))
+      : alert('Error Deleting This Task')
   }
 
   //Toggle Reminder
